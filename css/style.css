@@ -1,0 +1,619 @@
+* {
+  font-family: "rubik";
+}
+
+.both-container {
+  display: flex;
+}
+
+.element-form {
+  order: 1;
+  height: 100vh;
+  width: 700px;
+}
+
+.form-section {
+  height: 120vh;
+  position: fixed;
+}
+
+.form-input {
+  background-color: #f1f1f1;
+  padding: 40px 30px;
+  width: 500px;
+  height: 100vh;
+}
+
+.form-start {
+  background-color: #023e73;
+  box-shadow: 5px 15px 20px rgba(0, 0, 0, .4);
+  padding: 7px 0px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.form-start h3 {
+  color: #ffffff;
+  text-align: center;
+  font-weight: 600;
+}
+
+.form-start p {
+  color: #ffffff;
+  text-align: center;
+  font-size: 17px;
+}
+
+.form-continuation {
+  background-color: #ffffff;
+  padding-top: 15px;
+  box-shadow: 0px 15px 20px rgba(0, 0, 0, .4);
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  padding-bottom: 30px;
+}
+
+.format {
+  display: none;
+  margin-bottom: 15px;
+}
+
+form {
+  padding: 2px 20px;
+}
+
+input {
+  width: 100%;
+  outline: none;
+  border: 1px solid #024f92;
+  border-radius: 3px;
+  padding: 7px;
+}
+
+label {
+  font-weight: 500;
+  font-size: 15px;
+}
+
+label span {
+  color: red;
+}
+
+.input-3,
+.input-2,
+.input-4,
+.input-5,
+.input-6 {
+  margin-top: 7px;
+}
+
+.info {
+  font-size: 12px;
+  color: red;
+}
+
+#mail-info {
+  font-size: 10px;
+  color: red;
+}
+
+.name-check {
+  font-size: 10px;
+  color: red;
+}
+
+#num-check {
+  font-size: 10px;
+  color: red;
+}
+
+form button {
+  text-align: center;
+  padding: 10px 20px;
+  background-color: #023e73;
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  font-size: 17px;
+}
+
+.button-div {
+  margin-top: 25px;
+  text-align: center;
+}
+
+.ticket {
+  order: 2;
+  background-color: #ffffff;
+  padding: 50px 30px;
+  width: 100%;
+}
+
+.each-div {
+  background-color: #5277bd;
+  border-radius: 8px;
+  padding: 5px;
+
+}
+
+.each-ticket {
+  padding: 20px;
+  background-color: #edefee;
+  border-radius: 8px;
+}
+
+.each-ticket h4 {
+  padding-top: 12px;
+  font-size: 28px;
+  text-align: center;
+}
+
+.emp-id {
+  font-weight: 500;
+  font-size: 17px;
+
+}
+
+.each-ticket p+div {
+  padding-bottom: 10px;
+  font-size: 14px;
+}
+
+.each-ticket p {
+  font-weight: 500;
+}
+
+.rec-add {
+  padding-left: 25px;
+}
+
+.each-ticket img {
+  width: 40px;
+}
+
+.floating-icon {
+  display: none;
+}
+
+
+.custom-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+.modal-content {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #edefee;
+  color: #000000;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  width: 300px;
+}
+
+.modal-content p {
+  font-size: 16px;
+  margin: 0;
+  font-weight: 400;
+}
+
+.modal-close {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  font-size: 22px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+
+@media only screen and (max-width: 450px) {
+  .both-container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .element-form {
+    order: 1;
+    height: unset;
+    width: 100vw;
+    display: none;
+  }
+
+  .form-section {
+    height: unset;
+    position: relative;
+
+  }
+
+  .form-input {
+    padding: 25px 10px;
+    width: 100vw;
+    height: 650px;
+  }
+
+  .ticket {
+    order: 2;
+    padding: 0px 3px;
+    width: 100%;
+  }
+
+  .each-div {
+    margin-top: 20px;
+  }
+
+  .each-ticket {
+    padding: 15px;
+    background-color: #edefee;
+    border-radius: 8px;
+  }
+
+  .each-ticket h4 {
+    font-size: 24px;
+    margin-bottom: 14px;
+  }
+
+  .emp-id {
+    font-size: 18px;
+
+  }
+
+  .each-ticket p+div {
+    padding-bottom: 10px;
+    margin-top: -13px;
+    font-weight: 400;
+  }
+
+  .ph-add {
+    font-size: 13px;
+  }
+
+  .rec-add {
+    padding-left: 0px;
+    font-size: 13px;
+  }
+
+  .floating-icon {
+    position: fixed;
+    bottom: 40px;
+    right: 20px;
+    background-color: #023e73;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    padding: 18px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    transition: background-color 0.5s ease, transform 0.3s ease;
+  }
+
+  .floating-icon i {
+    font-size: 24px;
+  }
+
+  .floating-icon.cancel {
+    background-color: #e51837;
+    transform: rotate(90deg);
+
+  }
+}
+
+
+@media only screen and (min-width: 451px) and (max-width: 500px) {
+  .both-container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .element-form {
+    order: 1;
+    height: unset;
+    width: 100vw;
+    display: none;
+    margin-top: -15px;
+  }
+
+  .form-section {
+    height: unset;
+    position: relative;
+  }
+
+  .form-input {
+    padding: 40px 15px;
+    width: 100vw;
+    height: 700px;
+  }
+
+  .ticket {
+    order: 2;
+    padding: 0px 5px;
+    width: 100%;
+  }
+
+  .each-div {
+    margin-top: 20px;
+  }
+
+  .each-ticket {
+    padding: 20px;
+    background-color: #edefee;
+    border-radius: 8px;
+  }
+
+  .each-ticket h4 {
+    font-size: 26px;
+    margin-bottom: 16px;
+  }
+
+  .emp-id {
+    font-size: 20px;
+  }
+
+  .each-ticket p+div {
+    padding-bottom: 12px;
+    margin-top: -10px;
+    font-weight: 400;
+  }
+
+  .ph-add {
+    font-size: 12px;
+  }
+
+  .rec-add {
+    padding-left: 0px;
+    font-size: 12px;
+  }
+
+  .floating-icon {
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+    background-color: #023e73;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    padding: 18px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    transition: background-color 0.5s ease, transform 0.3s ease;
+  }
+
+  .floating-icon i {
+    font-size: 24px;
+  }
+
+  .floating-icon.cancel {
+    background-color: #e51837;
+    transform: rotate(90deg);
+  }
+}
+
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .both-container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .element-form {
+    order: 1;
+    height: unset;
+    width: 100vw;
+    display: none;
+    margin-top: -15px;
+  }
+
+  .form-section {
+    height: unset;
+    position: relative;
+  }
+
+  .form-input {
+    padding: 35px 15px;
+    width: 100vw;
+    height: 700px;
+  }
+
+
+  .ticket {
+    order: 2;
+    padding: 0px 5px;
+    width: 100%;
+  }
+
+  .each-div {
+    margin-top: 20px;
+  }
+
+  .each-ticket {
+    padding: 20px;
+    background-color: #edefee;
+    border-radius: 8px;
+  }
+
+  .each-ticket h4 {
+    font-size: 26px;
+    margin-bottom: 16px;
+  }
+
+  .emp-id {
+    font-size: 22px;
+  }
+
+  .each-ticket p+div {
+    padding-bottom: 12px;
+    margin-top: -10px;
+    font-weight: 400;
+  }
+
+  .ph-add {
+    font-size: 20px;
+  }
+
+  .rec-add {
+    padding-left: 0px;
+    font-size: 20px;
+    float: right;
+  }
+
+  .floating-icon {
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+    background-color: #023e73;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    padding: 18px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    transition: background-color 0.5s ease, transform 0.3s ease;
+  }
+
+  .floating-icon i {
+    font-size: 24px;
+  }
+
+  .floating-icon.cancel {
+    background-color: #e51837;
+    transform: rotate(90deg);
+  }
+}
+
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .both-container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .element-form {
+    order: 1;
+    height: unset;
+    width: 100vw;
+    display: none;
+  }
+
+  .form-section {
+    height: unset;
+    position: relative;
+
+  }
+
+  .form-input {
+    padding: 30px 22px;
+    width: 100vw;
+    height: unset;
+  }
+
+  .form-start h3 {
+    font-size: 35px;
+  }
+
+  .form-start p {
+    font-size: 19px;
+  }
+
+  .ticket {
+    order: 2;
+    padding: 0px 3px;
+    width: 100%;
+  }
+
+  .each-div {
+    margin-top: 15px;
+  }
+
+  .each-ticket {
+    padding: 15px;
+    background-color: #edefee;
+    border-radius: 8px;
+  }
+
+  .each-ticket h4 {
+    font-size: 30px;
+    margin-bottom: 15px;
+  }
+
+  .emp-id {
+    font-size: 23px;
+
+  }
+
+  .each-ticket p+div {
+    padding-bottom: 10px;
+    margin-top: -13px;
+    font-weight: 400;
+  }
+
+  .ph-add {
+    font-size: 23px;
+  }
+
+  .rec-add {
+    padding-left: 0px;
+    font-size: 20px;
+    float: right;
+  }
+
+  .mobile-center {
+    padding: 0px 20px;
+  }
+
+
+  .floating-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    background-color: #023e73;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    padding: 18px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    transition: background-color 0.5s ease, transform 0.3s ease;
+  }
+
+  .floating-icon i {
+    font-size: 24px;
+  }
+
+  .floating-icon.cancel {
+    background-color: #e51837;
+    transform: rotate(90deg);
+  }
+
+}

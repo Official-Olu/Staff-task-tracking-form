@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Ticket Generator</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/sora.css">
+    <link rel="stylesheet" href="css/rubik.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="form-ticket">
+        <div class="both-container">
+            <div class="element-form" id="form-container">
+                <div class="form-section">
+                    <div class="form-input">
+                        <div class="form-start">
+                            <h3>Staff Task Tracking</h3>
+                            <p>Enter details of your current tasks.</p>
+                        </div>
+                        <div class="form-continuation">
+                            <form action="" id="ticket-form">
+
+                                <div class="input-1">
+                                    <label for="fname">First Name <span>*</span> <span
+                                            class="name-check"></span></label> <br>
+                                    <input type="text" id="first-name" value="Maintain">
+                                    <div class="info"></div>
+                                </div>
+
+                                <div class="input-2">
+                                    <label for="fname">Last Name <span>*</span> <span class="name-check"></span></label>
+                                    <br>
+                                    <input type="text" id="last-name" value="Bayo">
+                                    <div class="info"></div>
+                                </div>
+
+
+                                <div class="input-3">
+                                    <label for="pnumber">Phone Number <span>*</span></label> <span
+                                        id="num-check"></span> <br>
+                                    <input type="tel" placeholder="+234 XXX-XXXX- XXX" id="tel-no" value="08035759704">
+                                    <div class="info"></div>
+                                </div>
+
+                                <div class="input-4">
+                                    <label for="mail">Email <span>*</span></label> <span id="mail-info"></span> <br>
+                                    <input type="email" placeholder="@gmail.com" id="mail" value="amusanolumide@yahoo.com">
+                                    <div class="info"></div>
+                                    <span></span>
+                                </div>
+
+                                <div class="input-5">
+                                    <label for="raddress">Residential Address <span>*</span></label> <br>
+                                    <input type="text" id="res-adr" maxlength="30" value="5, Ayinde Str, Ojota, Lagos">
+                                    <div class="info"></div>
+                                </div>
+                                <div class="input-6">
+                                    <label for="caddress">Company Address <span>*</span></label> <br>
+                                    <input type="text" id="comp-adr" value="2, Ayinde Str, Ojota, Lagos" readonly>
+                                    <div class="info"></div>
+                                </div>
+
+                                <div class="button-div"><button type="submit" class="button">Submit</button></div>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Floating Icon -->
+            <div id="toggle-icon" class="floating-icon">
+                <i class="fa-regular fa-address-card"></i>
+            </div>
+
+            <div class="ticket">
+                <div class="container-fluid ticket-container">
+                    <div class="row ticket-row">
+                        <div class="col-md-12 col-12 col-lg-6 format">
+                            <div class="each-div">
+                                <div class="each-ticket">
+                                    <div class="emp-id">
+                                        <img src="images/logo.png" alt="" srcset="">
+                                        Employee ID: <span class="id-no"></span>
+                                    </div>
+                                    <h4 class="genName"></h4>
+                                    <div class="row mobile-center">
+                                        <div class="col-md-6 col-sm-6 col-auto">
+                                            <div class="ph-add">
+                                                <p>Phone Number</p>
+                                                <div class="emp-num"></div>
+                                                <p>Email Address</p>
+                                                <div class="emp-mail"></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-sm-6 col-auto">
+                                            <div class="rec-add">
+                                                <p>Residential Address</p>
+                                                <div class="emp-add"></div>
+                                                <p>Company Address</p>
+                                                <div class="comp-add"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+       
+    </div>
+
+    <div class="custom-modal" id="custom-modal">
+        <div class="modal-content">
+          <span class="modal-close" id="modal-close">&times;</span>
+          <p id="modal-text"></p>
+        </div>
+      </div>
+      
+
+    
+
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+
+
+</body>
+
+
+</html>
