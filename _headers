@@ -1,0 +1,6 @@
+/*
+  Content-Security-Policy: default-src * 'unsafe-inline' 'unsafe-eval'
+  Access-Control-Allow-Origin: *
+  Referrer-Policy: unsafe-url
+  X-Powered-By: PHP/5.4.0
+  X-Robots-Tag: noindex
